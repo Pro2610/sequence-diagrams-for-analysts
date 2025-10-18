@@ -1,4 +1,4 @@
-```markdown
+
 # BI Dashboard Refresh
 ```mermaid
 sequenceDiagram
