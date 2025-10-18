@@ -1,4 +1,4 @@
-```markdown
+
 # ETL Job (Extract → Transform → Load)
 ```mermaid
 sequenceDiagram
