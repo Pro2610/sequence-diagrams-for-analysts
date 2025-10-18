@@ -1,4 +1,4 @@
-```markdown
+
 # API Gateway Validation
 ```mermaid
 sequenceDiagram
