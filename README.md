@@ -3,12 +3,12 @@
 A compact, practical collection of **Mermaid sequence diagrams** for common analytics, product, and payments scenarios.
 
 ## 📚 Contents
-1. Login & Authentication Flow
-2. Payment Processing
-3. Refund Flow
-4. ETL Job
-5. BI Dashboard Data Refresh
-6. API Gateway Validation
+- [Login & Authentication Flow](diagrams/auth-login.md)
+- [Payment Processing](diagrams/payment-processing.md)
+- [Refund Flow](diagrams/refund-flow.md)
+- [ETL Job](diagrams/etl-job.md)
+- [BI Dashboard Refresh](diagrams/bi-refresh.md)
+- [API Gateway Validation](diagrams/api-gateway-validation.md)
 
 ---
 
