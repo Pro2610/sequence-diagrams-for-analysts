@@ -1,7 +1,7 @@
-```markdown
+
 # Login & Authentication Flow
 
-`mermaid
+```mermaid
 sequenceDiagram
     participant U as User
     participant FE as Frontend
