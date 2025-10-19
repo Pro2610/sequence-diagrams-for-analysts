@@ -16,7 +16,7 @@ sequenceDiagram
         loop Exponential backoff (max 3)
             FE->>GW: Retry with Idem-Key K
             alt GW already processed K
-                GW-->>FE: 200 (same payment_id)  %% safe replay
+                GW-->>FE: 200 (same payment_id) %% safe replay
             else Still pending at PR
                 GW-->>FE: 202 Accepted (processing)
             end
