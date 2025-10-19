@@ -1,0 +1,34 @@
+# Payment Retry with Idempotency + Backoff + Webhooks
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant FE as Checkout UI
+    participant GW as Payment Gateway
+    participant PR as Processor
+    participant WH as Webhook Receiver
+    participant ORD as Order Service
+
+    Note over FE: Generate idempotency-key K
+    FE->>GW: POST /payments {amount} (Idem-Key: K)
+    alt Network timeout
+        GW-->>FE: 504 or no response
+        loop Exponential backoff (max 3)
+            FE->>GW: Retry with Idem-Key K
+            alt GW already processed K
+                GW-->>FE: 200 (same payment_id)  %% safe replay
+            else Still pending at PR
+                GW-->>FE: 202 Accepted (processing)
+            end
+        end
+    else 2xx
+        GW-->>FE: 200 Created (payment_id)
+    end
+
+    par Async settlement
+        GW->>PR: Clear/Capture
+        PR-->>GW: Result (delayed)
+    and Webhook to platform
+        GW-->>WH: webhook payment.captured / .failed
+        WH->>ORD: Update order state (CAPTURED/FAILED)
+    end
