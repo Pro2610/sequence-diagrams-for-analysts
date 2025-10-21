@@ -13,6 +13,7 @@ A compact, practical collection of **Mermaid sequence diagrams** for common anal
 ---
 
 ### 🧩 Example: Login & Authentication Flow
+
 ```mermaid
 sequenceDiagram
     participant U as User
