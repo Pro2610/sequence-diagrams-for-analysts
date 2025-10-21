@@ -33,5 +33,5 @@ sequenceDiagram
     IDP-->>BE: Return token
     BE-->>FE: Session created
     FE-->>U: Access granted
-end
+
 
