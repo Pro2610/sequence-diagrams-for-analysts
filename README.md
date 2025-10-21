@@ -24,3 +24,13 @@ sequenceDiagram
     IDP-->>BE: Return token
     BE-->>FE: Session created
     FE-->>U: Access granted
+
+---
+
+### 🔧 Advanced
+- [Fraud Screening: Rules + ML + Manual Review](diagrams/payments/advanced/fraud-screening-rules-ml-review.md)
+- [Payouts: Split Payments, Fees & Reconciliation](diagrams/payments/advanced/payouts-split-fees-reconciliation.md)
+- [Async API: Queue + Retries + DLQ](diagrams/api/advanced/async-api-queue-dlq-retries.md)
+- [Webhook: Signature Verification & Replay Protection](diagrams/api/advanced/webhook-signature-replay-protection.md)
+- [OAuth 2.0 Device Authorization Grant](diagrams/auth/advanced/oauth-device-flow.md)
+- [CDC Pipeline with Backfill & Watermarking](diagrams/data/advanced/cdc-backfill-watermark.md)
