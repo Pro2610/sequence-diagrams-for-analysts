@@ -19,6 +19,8 @@ A compact, practical collection of **Mermaid sequence diagrams** for common anal
 - [Webhook: Signature Verification & Replay Protection](diagrams/api/advanced/webhook-signature-replay-protection.md)
 - [OAuth 2.0 Device Authorization Grant](diagrams/auth/advanced/oauth-device-flow.md)
 - [CDC Pipeline with Backfill & Watermarking](diagrams/data/advanced/cdc-backfill-watermark.md)
+- [Reconciliation: Payouts vs Bank Statements (MT940/CSV)](diagrams/payments/advanced/reconciliation-bank-statements.md)
+- [API Rate Limiting with Token Bucket + 429 Retry-After](diagrams/api/advanced/rate-limiting-token-bucket.md)
 
 ### 🧩 Example: Login & Authentication Flow
 
