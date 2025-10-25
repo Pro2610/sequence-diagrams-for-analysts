@@ -22,6 +22,13 @@ A compact, practical collection of **Mermaid sequence diagrams** for common anal
 - [Reconciliation: Payouts vs Bank Statements (MT940/CSV)](diagrams/payments/advanced/reconciliation-bank-statements.md)
 - [API Rate Limiting with Token Bucket + 429 Retry-After](diagrams/api/advanced/rate-limiting-token-bucket.md)
 
+## 🖥 Merchant Console / Admin Flows
+- [Terminal Activation Flow (Fulfillment → Active)](diagrams/console/terminal-activation-flow.md)
+- [Manual Refund by Support Agent in Console](diagrams/console/manual-refund-by-agent.md)
+- [Merchant Status Change (Active / Suspended / Closed)](diagrams/console/merchant-status-change.md)
+- [Report Export Queue (Generate CSV / XLS and Download)](diagrams/console/report-export-queued.md)
+- [Secure Token Details View (Masked vs Reveal PAN)](diagrams/console/token-details-secure-view.md)
+
 ### 🧩 Example: Login & Authentication Flow
 
 ```mermaid
