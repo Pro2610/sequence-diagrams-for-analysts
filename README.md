@@ -29,6 +29,8 @@ A compact, practical collection of **Mermaid sequence diagrams** for common anal
 - [Report Export Queue (Generate CSV / XLS and Download)](diagrams/console/report-export-queued.md)
 - [Secure Token Details View (Masked vs Reveal PAN)](diagrams/console/token-details-secure-view.md)
 
+---
+
 ### 🧩 Example: Login & Authentication Flow
 
 ```mermaid
