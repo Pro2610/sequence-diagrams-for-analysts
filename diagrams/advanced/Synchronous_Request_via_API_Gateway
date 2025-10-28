@@ -1,0 +1,20 @@
+´´´mermaid
+sequenceDiagram
+    participant C as Client
+    participant G as API Gateway
+    participant SA as Service A (Order)
+    participant SB as Service B (Inventory)
+
+    C->>G: 1. Request to create order (POST /orders)
+    activate G
+    G->>SA: 2. Routing: create order
+    activate SA
+    SA->>SB: 3. Check item availability
+    activate SB
+    SB-->>SA: 4. Item is available
+    deactivate SB
+    SA->>SA: 5. Save order to DB
+    SA-->>G: 6. Order successfully created
+    deactivate SA
+    G-->>C: 7. HTTP 201 Created (Response)
+    deactivate G
