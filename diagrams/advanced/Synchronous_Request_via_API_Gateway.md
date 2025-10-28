@@ -1,4 +1,4 @@
-´´´mermaid
+```mermaid
 sequenceDiagram
     participant Client
     participant API_Gateway as API Gateway
