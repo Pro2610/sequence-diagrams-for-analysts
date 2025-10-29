@@ -1,0 +1,18 @@
+```mermaid
+sequenceDiagram
+    participant Order_Creation_Service as Order Creation Service
+    participant Payment_Service as Payment Service
+    participant Inventory_Service as Inventory Service
+    participant Message_Broker as Message Broker
+
+    Order_Creation_Service->>Message_Broker: 1. Event: OrderCreated
+    Payment_Service->>Message_Broker: 2. Process: PaymentReserved
+    Inventory_Service->>Message_Broker: 3. Process: InventoryReserved
+    
+    Note over Order_Creation_Service, Inventory_Service: Successful Path
+    
+    alt Payment Failure
+        Payment_Service->>Message_Broker: 2a. Event: PaymentFailed
+        Inventory_Service->>Inventory_Service: 4a. Compensation: Release reserved inventory
+        Order_Creation_Service->>Order_Creation_Service: 5a. Compensation: Cancel order
+    end
