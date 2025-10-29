@@ -1,4 +1,4 @@
-´´´mermaid
+```mermaid
 sequenceDiagram
     participant Service_A as Service A (Order)
     participant Message_Broker as Message Broker
