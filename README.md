@@ -1,39 +1,10 @@
-# Sequence Diagrams for Analysts
+🧩 Sequence Diagrams for Analysts
 
-A compact, practical collection of **Mermaid sequence diagrams** for common analytics, product, and payments scenarios.
+A curated collection of real-world Mermaid sequence diagrams for Payments, Data Engineering, API Infrastructure, Security, and Merchant Console flows.
+Built for Business Analysts, Product Analysts, and Data professionals to visualize system logic, document PRDs, and communicate workflows clearly.
 
-## 📚 Contents
-- [Login & Authentication Flow](diagrams/auth-login.md)
-- [Payment Processing](diagrams/payment-processing.md)
-- [Refund Flow](diagrams/refund-flow.md)
-- [ETL Job](diagrams/etl-job.md)
-- [BI Dashboard Refresh](diagrams/bi-refresh.md)
-- [API Gateway Validation](diagrams/api-gateway-validation.md)
 
----
-
-### 🔧 Advanced
-- [Fraud Screening: Rules + ML + Manual Review](diagrams/payments/advanced/fraud-screening-rules-ml-review.md)
-- [Payouts: Split Payments, Fees & Reconciliation](diagrams/payments/advanced/payouts-split-fees-reconciliation.md)
-- [Async API: Queue + Retries + DLQ](diagrams/api/advanced/async-api-queue-dlq-retries.md)
-- [Webhook: Signature Verification & Replay Protection](diagrams/api/advanced/webhook-signature-replay-protection.md)
-- [OAuth 2.0 Device Authorization Grant](diagrams/auth/advanced/oauth-device-flow.md)
-- [CDC Pipeline with Backfill & Watermarking](diagrams/data/advanced/cdc-backfill-watermark.md)
-- [Reconciliation: Payouts vs Bank Statements (MT940/CSV)](diagrams/payments/advanced/reconciliation-bank-statements.md)
-- [API Rate Limiting with Token Bucket + 429 Retry-After](diagrams/api/advanced/rate-limiting-token-bucket.md)
-
-## 🖥 Merchant Console / Admin Flows
-- [Terminal Activation Flow (Fulfillment → Active)](diagrams/console/terminal-activation-flow.md)
-- [Manual Refund by Support Agent in Console](diagrams/console/manual-refund-by-agent.md)
-- [Merchant Status Change (Active / Suspended / Closed)](diagrams/console/merchant-status-change.md)
-- [Report Export Queue (Generate CSV / XLS and Download)](diagrams/console/report-export-queued.md)
-- [Secure Token Details View (Masked vs Reveal PAN)](diagrams/console/token-details-secure-view.md)
-
----
-
-### 🧩 Example: Login & Authentication Flow
-
-```mermaid
+🧠 Example (GitHub-rendered)
 sequenceDiagram
     participant U as User
     participant FE as Frontend
@@ -44,5 +15,123 @@ sequenceDiagram
     IDP-->>BE: Return token
     BE-->>FE: Session created
     FE-->>U: Access granted
+
+📚 Index
+💳 Payments
+
+Payment Processing
+
+Refund Flow
+
+3-D Secure 2.x Authentication
+
+Payment Retry + Idempotency + Webhooks
+
+Dispute / Chargeback Lifecycle
+
+BIN Routing & Smart Retry
+
+Network Token Lifecycle
+
+Card Tokenization & Safe Detokenization
+
+Payouts: Split Payments, Fees & Reconciliation
+
+Reconciliation: Payouts vs Bank Statements (MT940/CSV)
+
+⚙️ Data Engineering
+
+ETL Job
+
+BI Dashboard Refresh
+
+ETL Orchestration with Prefect: Retries, Caching, SLA
+
+Lakehouse Ingestion (S3 → Delta / Airflow)
+
+Monitoring & SLA (Prometheus + Grafana)
+
+Streaming (Kafka + Schema Registry + Exactly Once)
+
+CDC Pipeline with Backfill & Watermarking
+
+Data Retention & Archival Lifecycle
+
+ETL with Data Quality Gates, Quarantine & Rollback
+
+🧵 API & Infrastructure
+
+API Gateway Validation (Schema & AuthZ)
+
+Async API: Queue + Retries + DLQ
+
+Webhook: Signature Verification & Replay Protection
+
+Rate Limiting (Token Bucket + 429 Retry-After)
+
+Circuit Breaker with Fallback Cache
+
+Secrets Rotation with KMS & Phased Rollout
+
+🔐 Security & Compliance
+
+PII Masking / Redaction Before Storage
+
+GDPR Deletion Request (Right to be Forgotten)
+
+Encryption at Rest & In Transit Using KMS
+
+Refresh Token Rotation + Reuse Detection
+
+🖥 Merchant Console / Admin Flows
+
+Terminal Activation Flow (Fulfillment → Active)
+
+Manual Refund by Support Agent in Console
+
+Merchant Status Change (Active / Suspended / Closed)
+
+Report Export Queue (Generate CSV / XLS and Download)
+
+Secure Token Details View (Masked vs Reveal PAN)
+
+☁️ Microservices & Architecture Patterns
+
+Order Saga with Compensation (Payment Failure)
+
+Outbox Pattern (Avoid Dual-Write)
+
+🧰 Release & Operations
+
+Feature Flag Canary Rollout
+
+Secrets Rotation Rollout (KMS)
+
+🪄 How to use
+
+Copy any diagram into your PRD, Jira story, or documentation.
+
+Edit labels/participants to match your architecture.
+
+Keep diagrams under ~25 messages for readability.
+
+Avoid outer code fences (```markdown). Use only:
+mermaid ...
+
+Use Mermaid Live Editor
+ for quick preview before committing.
+
+🧠 About this project
+
+Created by Yana Prozhuhan — Business & Data Analyst working on payment systems, merchant consoles, and analytics products.
+This repo combines business logic, system design, and analytical thinking in a visual, reusable format.
+
+📍 Focus areas: Payments · Merchant Console · ETL · BI · Security · API Architecture
+
+🔗 GitHub Profile
+ • LinkedIn
+
+📄 License
+MIT License © 2025 Yana Prozhuhan
 
 
