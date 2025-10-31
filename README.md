@@ -149,8 +149,6 @@ This repo combines business logic, system design, and analytical thinking in a v
 
 ## 📍 Focus areas: Payments · Merchant Console · ETL · BI · Security · API Architecture
 
-## 🔗 GitHub Profile
- • LinkedIn
 
 ## 📄 License
 MIT License © 2025 Yana Prozhuhan
