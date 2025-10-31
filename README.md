@@ -1,10 +1,11 @@
-🧩 Sequence Diagrams for Analysts
+## 🧩 Sequence Diagrams for Analysts
 
 A curated collection of real-world Mermaid sequence diagrams for Payments, Data Engineering, API Infrastructure, Security, and Merchant Console flows.
 Built for Business Analysts, Product Analysts, and Data professionals to visualize system logic, document PRDs, and communicate workflows clearly.
 
+---
 
-🧠 Example (GitHub-rendered)
+## 🧠 Example (GitHub-rendered)
 sequenceDiagram
     participant U as User
     participant FE as Frontend
@@ -16,8 +17,10 @@ sequenceDiagram
     BE-->>FE: Session created
     FE-->>U: Access granted
 
-📚 Index
-💳 Payments
+---    
+
+## 📚 Index
+## 💳 Payments
 
 Payment Processing
 
@@ -39,7 +42,9 @@ Payouts: Split Payments, Fees & Reconciliation
 
 Reconciliation: Payouts vs Bank Statements (MT940/CSV)
 
-⚙️ Data Engineering
+---
+
+## ⚙️ Data Engineering
 
 ETL Job
 
@@ -59,7 +64,9 @@ Data Retention & Archival Lifecycle
 
 ETL with Data Quality Gates, Quarantine & Rollback
 
-🧵 API & Infrastructure
+---
+
+## 🧵 API & Infrastructure
 
 API Gateway Validation (Schema & AuthZ)
 
@@ -73,7 +80,9 @@ Circuit Breaker with Fallback Cache
 
 Secrets Rotation with KMS & Phased Rollout
 
-🔐 Security & Compliance
+---
+
+## 🔐 Security & Compliance
 
 PII Masking / Redaction Before Storage
 
@@ -83,7 +92,9 @@ Encryption at Rest & In Transit Using KMS
 
 Refresh Token Rotation + Reuse Detection
 
-🖥 Merchant Console / Admin Flows
+---
+
+## 🖥 Merchant Console / Admin Flows
 
 Terminal Activation Flow (Fulfillment → Active)
 
@@ -95,19 +106,25 @@ Report Export Queue (Generate CSV / XLS and Download)
 
 Secure Token Details View (Masked vs Reveal PAN)
 
-☁️ Microservices & Architecture Patterns
+---
+
+## ☁️ Microservices & Architecture Patterns
 
 Order Saga with Compensation (Payment Failure)
 
 Outbox Pattern (Avoid Dual-Write)
 
-🧰 Release & Operations
+---
+
+## 🧰 Release & Operations
 
 Feature Flag Canary Rollout
 
 Secrets Rotation Rollout (KMS)
 
-🪄 How to use
+---
+
+## 🪄 How to use
 
 Copy any diagram into your PRD, Jira story, or documentation.
 
@@ -121,17 +138,21 @@ mermaid ...
 Use Mermaid Live Editor
  for quick preview before committing.
 
-🧠 About this project
+ ---
+
+## 🧠 About this project
 
 Created by Yana Prozhuhan — Business & Data Analyst working on payment systems, merchant consoles, and analytics products.
 This repo combines business logic, system design, and analytical thinking in a visual, reusable format.
 
-📍 Focus areas: Payments · Merchant Console · ETL · BI · Security · API Architecture
+---
 
-🔗 GitHub Profile
+## 📍 Focus areas: Payments · Merchant Console · ETL · BI · Security · API Architecture
+
+## 🔗 GitHub Profile
  • LinkedIn
 
-📄 License
+## 📄 License
 MIT License © 2025 Yana Prozhuhan
 
 
